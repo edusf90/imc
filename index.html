@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>IMC</title>
+  </head>
+  <body>
+    <main class="container">
+      <img src="icone.png" class="imagem-logo" />
+      <div>
+        <label class="labelInfo">Nome</label>
+        <input
+          class="inputInfo"
+          type="text"
+          id="nome"
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+      <div>
+        <label class="labelInfo">Peso</label>
+        <input
+          class="inputInfo"
+          type="text"
+          id="peso"
+          placeholder="Peso"
+          required
+        />
+      </div>
+      <div>
+        <label class="labelInfo">Altura</label>
+        <input
+          class="inputInfo"
+          type="text"
+          id="altura"
+          placeholder="Altura"
+          required
+        />
+      </div>
+
+      <button class="btn" onclick="enviar()">Calcular</button>
+    </main>
+    <div class="" id="formResultado">
+      <span id="avisoColocado"></span>
+      <span id="nomeColocado"></span>
+      <span id="pesoColocado"></span>
+      <span id="alturaColocado"></span>
+      <span id="imcColocado"></span>
+      <span id="statusColocado"></span>
+    </div>
+    <!-- <button class="btn" onclick="AbaixoPeso()">AbaixoPeso</button>
+    <button class="btn" onclick="Normal()">Normal</button>
+    <button class="btn" onclick="Sobrepeso()">Sobrepeso</button>
+    <button class="btn" onclick="Obesidade1()">Obesidade1</button>
+    <button class="btn" onclick="Obesidade2()">Obesidade2</button>
+    <button class="btn" onclick="Obesidade3()">Obesidade3</button> -->
+  </body>
+  <script src="script.js"></script>
+  <script src="testeimc.js"></script>
+</html>
