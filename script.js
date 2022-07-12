@@ -11,18 +11,29 @@ function enviar() {
     aviso.classList.add('error')
   }
 
+  nomePego = nomePego.trim()
+
   if (nomePego == '') {
     // Se o nome estiver vazio
     aviso()
+
     document.getElementById('avisoColocado').innerHTML = 'Nome vazio'
   } else if (pesoPego == '') {
     // Se o Peso estiver vazio
     aviso()
     document.getElementById('avisoColocado').innerHTML = 'Peso vazio'
+  } else if (pesoPego < 0) {
+    // Se o Peso for negativo
+    aviso()
+    document.getElementById('avisoColocado').innerHTML = 'Peso negativo'
   } else if (alturaPego == '') {
-    // alert('Altura vazia')
+    // Se a altura estiver vazia
     aviso()
     document.getElementById('avisoColocado').innerHTML = 'Altura vazio'
+  } else if (alturaPego < 0) {
+    // Se o altura for negativo
+    aviso()
+    document.getElementById('avisoColocado').innerHTML = 'Altura negativa'
   } else {
     document.getElementById('avisoColocado').innerHTML = ''
 
