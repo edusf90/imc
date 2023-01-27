@@ -1,3 +1,5 @@
+// Script de teste
+
 function AbaixoPeso() {
   document.querySelector("[id='nome']").value = 'Messias Dias Fartaria'
   document.querySelector("[id='peso']").value = 20
